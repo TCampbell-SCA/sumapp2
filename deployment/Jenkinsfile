@@ -12,7 +12,7 @@ podTemplate(label: label,
 		
 	  
 	  stage('Get Source') {
-		git "https://github.com/IBM-ICP-CoC/SumApp.git"
+		git "https://gitlab.com/icp-coc-demo/SumApp.git"
 	  }
 
 	  def props = readProperties  file:'deployment/pipeline.properties'
