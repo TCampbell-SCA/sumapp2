@@ -17,6 +17,6 @@ spec:
       containers:
       - name: sumapp
         image: coc.icp:8500/demo/sumapp
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 9080
