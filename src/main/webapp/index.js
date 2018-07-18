@@ -68,10 +68,10 @@ function xhrPost(url, op1, op2, callback, errback){
 				callback(xhr.responseText);
 			} else {
 				errback('service not available');
-			}
+			} 
 		}
 	};
-	xhr.timeout = 3000; 
+	xhr.timeout = 20000; // 20 seconds for demo in debugger
 	xhr.ontimeout = errback;
 	xhr.send(params);
 }
