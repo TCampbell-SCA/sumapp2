@@ -1,9 +1,5 @@
-// index.js
 
-// request message on server
-//Calls SimpleServlet to get the "Hello World" message
 xhrGet("pod", function(responseText){
-	// add to document
 	var mytitle = document.getElementById('pod');
 	mytitle.innerHTML = responseText;
 
@@ -26,7 +22,7 @@ function sum(){
 	});
 }
 
-//utilities
+
 function createXHR(){
 	if(typeof XMLHttpRequest != 'undefined'){
 		return new XMLHttpRequest();
