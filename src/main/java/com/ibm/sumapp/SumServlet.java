@@ -34,14 +34,14 @@ public class SumServlet extends HttpServlet {
 		try {
 			op1 = Integer.parseInt(param_op1);
 		} catch(NumberFormatException nfe) {
-			msg += "'" + param_op1 + "' not a valid integer";
+			msg = "'" + param_op1 + "' not a valid integer";
 		}
 
 		try {
 			op2 = Integer.parseInt(param_op2);
 		} catch(NumberFormatException nfe) {
 			if( msg == null ) {
-				msg += "'" + param_op2 + "' not a valid integer";
+				msg = "'" + param_op2 + "' not a valid integer";
 			} else {
 				msg += ", and '" + param_op2 + "' not a valid integer";
 			}
